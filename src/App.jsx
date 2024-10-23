@@ -6,14 +6,14 @@ import Sidebar from './Components/Sidebar'
 const App = () => {
   return (
     <div>
-      <header>
+      <header  data-theme="night">
         <Navbar/>
       </header>
-      <main className='flex'>
-        <aside>
+      <main data-theme="night" className='flex justify-center '>
+        <aside className='w-1/12 bg-base-100 '>
           <Sidebar/>
         </aside>
-        <section>
+        <section data-theme="dark" className='flex-1 p-5'> 
           <Outlet/>
         </section>
       </main>
