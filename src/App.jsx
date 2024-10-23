@@ -9,7 +9,7 @@ const App = () => {
       <header>
         <Navbar/>
       </header>
-      <main>
+      <main className='flex'>
         <aside>
           <Sidebar/>
         </aside>
