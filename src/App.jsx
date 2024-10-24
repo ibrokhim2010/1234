@@ -3,8 +3,10 @@ import Navbar from './Components/Navbar'
 import { Outlet } from 'react-router-dom'
 import Sidebar from './Components/Sidebar'
 
+
 const App = () => {
   return (
+    
     <div>
       <header  data-theme="night">
         <Navbar/>
@@ -21,4 +23,4 @@ const App = () => {
   )
 }
 
-export default App  
+export default App    

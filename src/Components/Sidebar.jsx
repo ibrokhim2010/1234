@@ -9,75 +9,116 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { LuFiles } from "react-icons/lu";
 import { IoSettingsOutline } from "react-icons/io5";
 import { HiOutlineDocumentText } from "react-icons/hi2";
+import { BsChevronDown } from "react-icons/bs";
+import { BsBrush } from "react-icons/bs";
 
 const Sidebar = () => {
   return (
     <div className="flex flex-col space-y-4 p-4">
       <NavLink 
         to="/" 
-        className={({ isActive }) => `flex items-center space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
       >
-        <RxDashboard />
-        <span>Dashboard</span>
+        <span className="flex items-center space-x-2">
+          <RxDashboard />
+          <span>Dashboard</span>
+        </span>
       </NavLink>
+
       <NavLink 
         to="/leads" 
-        className={({ isActive }) => `flex items-center space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
       >
-        <RiInstallLine />
-        <span>Leads</span>
+        <span className="flex items-center space-x-2">
+          <RiInstallLine />
+          <span>Leads</span>
+        </span>
       </NavLink>
+
       <NavLink 
-        to="/Transactions" 
-        className={({ isActive }) => `flex items-center space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+        to="/transactions" 
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
       >
-        <TbCoin />
-        <span>Transactions</span>
+        <span className="flex items-center space-x-2">
+          <TbCoin />
+          <span>Transactions</span>
+        </span>
       </NavLink>
+
       <NavLink 
-        to="/Analytics" 
-        className={({ isActive }) => `flex items-center space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+        to="/analytics" 
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
       >
-        <TbBrandGoogleAnalytics />
-        <span>Analytics</span>
+        <span className="flex items-center space-x-2">
+          <TbBrandGoogleAnalytics />
+          <span>Analytics</span>
+        </span>
       </NavLink>
+
       <NavLink 
-        to="/Integration" 
-        className={({ isActive }) => `flex items-center space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+        to="/integration" 
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
       >
-        <AiOutlineThunderbolt />
-        <span>Integration</span>
+        <span className="flex items-center space-x-2">
+          <AiOutlineThunderbolt />
+          <span>Integration</span>
+        </span>
       </NavLink>
+
       <NavLink 
-        to="/Calendar" 
-        className={({ isActive }) => `flex items-center space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+        to="/calendar" 
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
       >
-        <IoCalendarOutline />
-        <span>Calendar</span>
+        <span className="flex items-center space-x-2">
+          <IoCalendarOutline />
+          <span>Calendar</span>
+        </span>
       </NavLink>
+
       <NavLink 
-        to="/Pages" 
-        className={({ isActive }) => `flex items-center space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+        to="/pages" 
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
       >
-        <LuFiles />
-        <span>Pages</span>
+        <span className="flex items-center space-x-2">
+          <LuFiles />
+          <span>Pages</span>
+        </span>
+        <BsChevronDown /> {/* O'ng tomonga qo'yilgan */}
       </NavLink>
+
       <NavLink 
-        to="/Settings" 
-        className={({ isActive }) => `flex items-center space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+        to="/settings" 
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
       >
-        <IoSettingsOutline />
-        <span>Settings</span>
+        <span className="flex items-center space-x-2">
+          <IoSettingsOutline />
+          <span>Settings</span>
+        </span>
+        <BsChevronDown /> {/* O'ng tomonga qo'yilgan */}
       </NavLink>
+
       <NavLink 
-        to="/Documentation" 
-        className={({ isActive }) => `flex items-center space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+        to="/documentation" 
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
       >
-        <HiOutlineDocumentText />
-        <span>Documentation</span>
+        <span className="flex items-center space-x-2">
+          <HiOutlineDocumentText />
+          <span>Documentation</span>
+        </span>
+        <BsChevronDown /> {/* O'ng tomonga qo'yilgan */}
+      </NavLink>
+
+      <NavLink 
+        to="/facts" 
+        className={({ isActive }) => `flex items-center justify-between space-x-2 ${isActive ? 'text-blue-600' : 'text-white'} hover:text-blue-600`}
+      >
+        <span className="flex items-center space-x-2">
+        <BsBrush />
+          <span>Facts</span>
+        </span>
       </NavLink>
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;

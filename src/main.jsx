@@ -15,6 +15,7 @@ import Calendar from "./Pages/Calendar";
 import Pages from "./Pages/Pages";
 import Settings from "./Pages/Settings";
 import Documentation from "./Pages/Documentation";
+import Facts from "./Pages/Facts";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
     {
       path:'/Documentation',
       element:<Documentation/>,
+    },
+    {
+      path:'/Facts',
+      element:<Facts/>,
     },
     
   ]
