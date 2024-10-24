@@ -2,7 +2,9 @@ import React from 'react'
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+    <div className=' flex items-center justify-center text-3xl font-bold'>
+    Begzod krasavchik
+  </div>
   )
 }
 

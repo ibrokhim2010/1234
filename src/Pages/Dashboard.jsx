@@ -3,7 +3,7 @@ import { GiCheckMark } from "react-icons/gi";
 
 const Dashboard = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-4 h-full'>
+    <div className='flex flex-col items-center justify-center gap-4 p-20'>
 
        <h1 className='font-bold text-2xl'>Admin Dashboard Starter Kit</h1>
        

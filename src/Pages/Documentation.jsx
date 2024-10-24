@@ -2,7 +2,9 @@ import React from 'react'
 
 const Documentation = () => {
   return (
-    <div>Documentation</div>
+    <div className=' flex items-center justify-center text-3xl font-bold'>
+      Begzod krasavchik
+    </div>
   )
 }
 

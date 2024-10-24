@@ -10,7 +10,7 @@ const App = () => {
         <Navbar/>
       </header>
       <main data-theme="night" className='flex justify-center '>
-        <aside className='w-1/12 bg-base-100 '>
+        <aside className='bg-base-100 p-3 h-screen w-2/12'>
           <Sidebar/>
         </aside>
         <section data-theme="dark" className='flex-1 p-5'> 
@@ -21,4 +21,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App  

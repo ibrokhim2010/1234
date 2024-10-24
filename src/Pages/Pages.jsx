@@ -2,7 +2,9 @@ import React from 'react'
 
 const Pages = () => {
   return (
-    <div>Pages</div>
+    <div className=' flex items-center justify-center text-3xl font-bold'>
+    Begzod krasavchik
+  </div>
   )
 }
 

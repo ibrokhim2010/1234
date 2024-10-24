@@ -2,7 +2,9 @@ import React from 'react'
 
 const Calendar = () => {
   return (
-    <div>Calendar</div>
+    <div className=' flex items-center justify-center text-3xl font-bold text-yellow-500'>
+      Begzod krasavchik
+    </div>
   )
 }
 
